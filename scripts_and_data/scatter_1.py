@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
+#
 data = pd.read_csv('data5.csv', sep=";").iloc[1::2,:]       # iloc[1::2,:] is to get rid of empty rows
 view=data['view_count']/1000000
 likes=data['likes']/1000000
